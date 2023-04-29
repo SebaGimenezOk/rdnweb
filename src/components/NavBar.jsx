@@ -20,11 +20,11 @@ const NavBar = () => {
         },
         {
             id: 3,
-            link: 'Tv'
+            link: 'Video'
         },
         {
             id: 4,
-            link: 'Eventos'
+            link: 'Podcast'
         },
         {
             id: 5,
@@ -49,12 +49,12 @@ const NavBar = () => {
                 ))}
             </ul>
 
-            <div onClick={() => setNav(!nav)} className='cursor-pointer pr-4 z-10 text-orange-400 md:hidden'>
+            <div onClick={() => setNav(!nav)} className='cursor-pointer pr-4 z-10 md:hidden'>
                 {nav ? <FaTimes size={20} /> : <FaBars size={20} />}
             </div>
 
             {nav && (
-                <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-orange-300 to-orange-700 '>
+                <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from bg-slate-950 to-slate-800 '>
 
                     {links.map(({ id, link }) => (
                         <li key={id} className='px-4 cursor-pointer capitalize py-6 text-3xl'>{link}</li>
