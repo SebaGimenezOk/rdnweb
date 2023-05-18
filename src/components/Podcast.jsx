@@ -4,6 +4,7 @@ import { SlSocialSoundcloud } from 'react-icons/sl'
 
 
 
+
 const Podcast = () => {
     const podcasts = [
         {
@@ -33,7 +34,7 @@ const Podcast = () => {
             child: (<>
                 La Libertad Avanza <FaYoutube size={60} />
             </>),
-            href: 'https://youtu.be/k-mIqDJJtjM',
+            href: 'https://youtube.com/playlist?list=PL4QrFOsg1mVo9-CFmjqMxuHtyT5L1Ddfk',
 
         }, {
             id: 5,
