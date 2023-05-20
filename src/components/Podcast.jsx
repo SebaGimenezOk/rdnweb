@@ -79,26 +79,14 @@ const Podcast = () => {
     return (
         <div>
             <div className='px-2 py-5 bg-slate-950'>
-                <div name='hero1' className=' bg-slate-900 rounded-xl py-4 '>
-                    <h2 className='text-white text-5xl font-semibold mx-2 py-8 px-3'>
-                        Podcasts de RDN en Spotify
-                    </h2>
-                    <div className='px-3'>
-                        <iframe src="https://open.spotify.com/embed/episode/0533PBkeZ67Glm9LwEDGjD?utm_source=generator" title='cleep' width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    </div>
-                    <div className='px-3 my-3 '>
-                        <iframe src="https://open.spotify.com/embed/episode/0533PBkeZ67Glm9LwEDGjD?utm_source=generator" title='cleep' width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    </div>
-                </div>
-
-                <div name='hero2' className=' bg-gradient-to-t from-red-700 to-red-600 rounded-xl py-4 my-3'>
-                    <h2 className='text-white text-5xl font-semibold  mb-14 mx-2  px-4 py-4'>
+                <div name='hero1' className=' bg-gradient-to-t from-red-700 to-red-600 rounded-xl py-4 my-3'>
+                    <h2 className='text-white text-5xl font-semibold  mx-2  px-4 py-4'>
                         Videocasts de RDN en Youtube
                     </h2>
                     <div className='text-white'>
                         <ul className='flex mb-12'>
                             {podcasts.map(({ id, href, child }) => (
-                                <li key={id} className='flex flex-col place-items-center mx-auto'>
+                                <li key={id} className='flex flex-col place-items-center mt-12 mx-auto'>
                                     <a href={href} className='text-white' target='_blank' rel='noreferrer' >
                                         {child}
                                     </a>
@@ -106,15 +94,14 @@ const Podcast = () => {
                             ))}
                         </ul>
                     </div>
-
                 </div>
-                <div name='hero3' className=' bg-gradient-to-t from-orange-500 to-orange-600 rounded-xl py-4 my-3'>
-                    <h2 className='text-white text-5xl font-semibold  mb-14 mx-2 py-4'>
-                        Podcasts de RDN & Radio Grote en SoundCloud
+                <div name='hero2' className=' bg-gradient-to-t from-orange-500 to-orange-600 rounded-xl py-4 mb-3'>
+                    <h2 className='text-white text-5xl font-semibold  mb-12 mx-2 py-4'>
+                        Podcasts de RDN en SoundCloud
                     </h2>
                     <div>
                         <div className='text-white'>
-                            <ul className='flex align-top mb-12'>
+                            <ul className='flex align-top  mt-12 mb-12'>
                                 {soundclouds.map(({ id, href, child }) => (
                                     <li key={id} className='flex flex-col content-center mx-auto'>
                                         <a href={href} className=' text-white' target='_blank' rel='noreferrer' >
@@ -124,6 +111,17 @@ const Podcast = () => {
                                 ))}
                             </ul>
                         </div>
+                    </div>
+                </div>
+                <div name='hero3' className=' bg-green-700 rounded-xl py-4 mb-5 '>
+                    <h2 className='text-white text-5xl font-semibold mx-2 py-8 px-3'>
+                        Podcasts de RDN en Spotify
+                    </h2>
+                    <div className='px-3'>
+                        <iframe src="https://open.spotify.com/embed/episode/0533PBkeZ67Glm9LwEDGjD?utm_source=generator" title='cleep' width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                    <div className='px-3 my-3 '>
+                        <iframe src="https://open.spotify.com/embed/episode/0533PBkeZ67Glm9LwEDGjD?utm_source=generator" title='cleep' width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     </div>
                 </div>
             </div>

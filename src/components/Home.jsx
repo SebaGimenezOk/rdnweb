@@ -8,7 +8,7 @@ const Home = () => {
         <div name='inicio' className='' >
             <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center '>
                 <div>
-
+    
                     <h2> aca va el titulo</h2>
                     <p>
                         aca va todo el parrafo co para que equede ok
