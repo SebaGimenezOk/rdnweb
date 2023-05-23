@@ -5,7 +5,7 @@ import React from 'react'
 
 const Home = () => {
     return (
-        <div name='inicio' className='' >
+        <div name='Inicio' >
             <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center '>
                 <div>
     

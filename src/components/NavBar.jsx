@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { FaTimes, FaBars } from 'react-icons/fa'
 import FaviconRDN from '../assets/albumRDN/logofavicon2.png'
 import AudioPlayer from './AudioPlayer';
+import { Link } from 'react-scroll'
 
 
 
@@ -24,7 +25,7 @@ const NavBar = () => {
         },
         {
             id: 4,
-            link: 'Podcast'
+            link: 'Podcasts'
         },
         {
             id: 5,
@@ -45,7 +46,9 @@ const NavBar = () => {
             <ul className='hidden md:flex'>
 
                 {links.map(({ id, link }) => (
-                    <li key={id} className='px-4 cursor-pointer capitalize font-light  hover:scale-105 duration-200'>{link}</li>
+                    <li key={id} className='px-4 cursor-pointer capitalize font-light  hover:scale-105 duration-200'>
+                        <Link to={link} smooth duration={700}>{link}</Link>
+                    </li>
                 ))}
             </ul>
 
@@ -57,7 +60,7 @@ const NavBar = () => {
                 <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from bg-slate-950 to-slate-800 '>
 
                     {links.map(({ id, link }) => (
-                        <li key={id} className='px-4 cursor-pointer capitalize py-6 text-3xl'>{link}</li>
+                        <li key={id} className='px-4 cursor-pointer capitalize py-6 text-3xl'> <Link to={link} smooth duration={500}>{link}</Link></li>
                     ))}
 
                 </ul>

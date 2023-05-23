@@ -77,16 +77,17 @@ const Podcast = () => {
     ]
 
     return (
-        <div>
+        <div name='Podcasts'>
             <div className='px-2 py-5 bg-slate-950'>
                 <div name='hero1' className=' bg-gradient-to-t from-red-700 to-red-600 rounded-xl py-4 my-3'>
+                    
                     <h2 className='text-white text-5xl font-semibold  mx-2  px-4 py-4'>
                         Videocasts de RDN en Youtube
                     </h2>
                     <div className='text-white'>
                         <ul className='flex mb-12'>
                             {podcasts.map(({ id, href, child }) => (
-                                <li key={id} className='flex flex-col place-items-center mt-12 mx-auto'>
+                                <li key={id} className='flex flex-col place-items-center mt-12 mx-auto '>
                                     <a href={href} className='text-white' target='_blank' rel='noreferrer' >
                                         {child}
                                     </a>
