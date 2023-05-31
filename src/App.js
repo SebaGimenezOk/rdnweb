@@ -6,6 +6,7 @@ import Institucional from "./components/Institucional";
 import NavBar from "./components/NavBar";
 import Podcast from "./components/Podcast";
 import Video from "./components/Video";
+import Contact from "./components/Contact";
 
 
 
@@ -22,6 +23,7 @@ function App() {
         <Institucional />
         <Banner2 />
         <Podcast />
+        <Contact />
         <Footer />
       </div>
     </div>

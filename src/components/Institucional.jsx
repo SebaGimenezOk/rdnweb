@@ -6,7 +6,7 @@ import onublanco from '../assets/general/logoazul.svg'
 
 const Institucional = () => {
   return (
-    <div name='Institucional' className='py-4 h-96 w-full bg-slate-950'>
+    <div name='Institucional' className=' h-screen w-full bg-slate-950'>
       <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center  h-full px-4 md:flex-row'>
         <div className=''>
           <h2 className='text-white text-5xl font-semibold inline border-b-4 border-red-500  py-3 my-3'>Institucional</h2>
