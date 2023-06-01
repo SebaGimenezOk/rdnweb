@@ -2,11 +2,11 @@ import React from 'react'
 import { FaYoutube } from 'react-icons/fa';
 import { ImYoutube2 } from 'react-icons/im';
 // import { SlSocialSoundcloud } from 'react-icons/sl'
-import soundfly from '../assets/general/soundfly.jpg'
+import soundfly from '../assets/general/soundfly1.jpg'
 import sinlimites from '../assets/general/sinlimites.jpg'
-import delatora from '../assets/general/delatora.jpg'
+import delatora from '../assets/general/DELATORA1.jpg'
 import libertad from '../assets/general/libertad.jpg'
-import fusiontotal from '../assets/general/fusiontotal.jpg'
+import fusiontotal from '../assets/general/fusion1.jpg'
 
 
 
@@ -86,20 +86,20 @@ const Podcast = () => {
 
     return (
 
-        <div name='Podcasts' className='bg-gradient-to-br from-red-700 from-10% via-red-600 via-30% to-red-800 to-90%  w-full h-screen  text-white'>
-            <div className='max-w-screen-lg mx-3 flex items-center justify-center  h-full px-4 md:flex-row'>
+        <div name='Podcasts' className='bg-gradient-to-br from-red-700 from-10% via-red-600 via-30% to-red-800 to-90% w-full p-12  text-white'>
+            <div className=' max-w-screen-lg p-4 mx-auto  flex flex-col justify-center w-full'>
                 <div className='pb-5 '>
-                    <p className='text-5xl  gap-4 mx-16 font-semibold'>Videocast </p>
-                    <p className='py-6  font-normal mx-16 '>programas de RDN que estan en Youtube</p>
+                    <h5 className='text-5xl  font-semibold'>Videocast</h5>
+                    <p className='py-3  text-lg font-normal '>programas de RDN que estan en Youtube</p>
                 </div>
 
-                <div className='grid sm:grid-cols-1 md:grid-cols-5 gap-5 sm:px-0'>
+                <div className='grid sm:grid-cols-1 md:grid-cols-5  gap-8 px-12 sm:px-0'>
                     {podcasts.map(({ id, src, href, child }) => (
                         <div key={id}>
                             <img src={src} alt="re" className='rounded-lg duration-200 hover:scale-105' />
                             <div className='flex justify-center '>
                                 <button className='px-6 py-2 m-2 duration-200 hover:scale-105'>
-                                <a href={href}  target='_blank' rel='noreferrer' >
+                                    <a href={href} target='_blank' rel='noreferrer' >
                                         {child}
                                     </a> <ImYoutube2 size={60} />
 

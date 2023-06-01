@@ -6,11 +6,11 @@ import onublanco from '../assets/general/logoazul.svg'
 
 const Institucional = () => {
   return (
-    <div name='Institucional' className=' h-screen w-full bg-slate-950'>
+    <div name='Institucional' className='w-full bg-slate-950'>
       <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center  h-full px-4 md:flex-row'>
-        <div className=''>
-          <h2 className='text-white text-5xl font-semibold inline border-b-4 border-red-500  py-3 my-3'>Institucional</h2>
-          <p className='text-white mt-12'> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <div className='py-9 px-4'>
+          <h2 className='text-white text-5xl font-semibold inline border-b-4 border-red-500'>Institucional</h2>
+          <p className='text-white text-lg py-9'> Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Doloribus, consectetur repellat nostrum corrupti dolores qui aliquam nesciunt sapiente,
             ipsa et iste praesentium ullam commodi amet laborum voluptatum, ex dicta quia.</p>
           <div className='flex my-4  text-white'>

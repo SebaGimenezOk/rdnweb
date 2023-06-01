@@ -10,7 +10,7 @@ const Contact = () => {
                 </div>
 
                 <div className='flex justify-center items-center'>
-                    <form action="" className='flex flex-col w-full md:w-1/2'>
+                    <form action="" className='flex flex-col px-8 w-full md:w-1/2 md:px-1 '>
                         <input type="text" name='name' placeholder='tu nombre' className=' my-3 p-2 bg-transparent border-2
                     rounded-md text-white focus:outline-none' />
                         <input type="text" name='mail' placeholder='tu correo' className='my-3 p-2 bg-transparent border-2
